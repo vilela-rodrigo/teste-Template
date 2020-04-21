@@ -13,7 +13,15 @@
   /* Queremos que o banner ocupe 50% da altura da tela, incluindo o header, que tem 59 px, para isso usamos o calc() */
 }
 
-.card-img-top {
-  max-width: 30%;
-
+.badge.badge-pill.badge-info {
+  position: absolute;
+  /* Faz com que a badge promo se sobreponha ao restante do card (funciona pois o card tem position relative por default) */
+  top: 10px;
+  /* Alinhando 10px abaixo da linha de topo (limite do card) */
+  right: 10px;
+  /* Alinhando 10px para 'dentro' a partir da linha da direita (limite do card) */
+  font-size: 0.9em;
+  /* Definindo que a fonte será 90% do que seria naturalmente */
+  padding: 5px 10px;
+  /* Definindo 'margens internas' de 5px na vertical e 10px na horizontal */
 }
