@@ -1,0 +1,19 @@
+/* código do prof. Marcelo */
+.carousel-item {
+  /* Seletor por classe do slide do carrossel. Seletor genérico, pega TODOS e CADA item do carrossel, para aplicarmos propriedades em comum entre todos eles */
+  background-position: center;
+  /* Centraliza a imagem de fundo */
+  background-attachment: fixed;
+  /* Deixa a imagem fixa no scroll (impressão do paralaxe, mas não é paralaxe */
+  background-repeat: no-repeat;
+  /* Caso a imagem seja menor que o container, não se repetirá - como o size é cover, não precisaríamos dela na verdade */
+  background-size: cover;
+  /* Garante que a menor medida da imagem completará o container - pode haver perda de parte da imagem mas não fica espaço vazio, o contrário do contain */
+  height: calc(50vh - 59px);
+  /* Queremos que o banner ocupe 50% da altura da tela, incluindo o header, que tem 59 px, para isso usamos o calc() */
+}
+
+.card-img-top {
+  max-width: 30%;
+
+}
